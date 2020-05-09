@@ -188,7 +188,6 @@ public class FCMService extends FirebaseMessagingService implements PushConstant
                 notificationManager.cancelAll();
                 LocalBroadcastManager localBroadcastManager = LocalBroadcastManager.getInstance(FCMService.this);
                 localBroadcastManager.sendBroadcast(new Intent("com.pgcan.action.cancelcall"));
-                return;
             }
         }
         catch(Exception ex){
